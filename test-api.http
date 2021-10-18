@@ -1,0 +1,22 @@
+
+### @name GetAllUsers
+GET http://localhost:3000
+
+### @name Register
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "phone_number": "0123456789",
+    "password": "abc",
+    "name": "Dat"
+}
+
+### @name Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "phone_number": "0123456789",
+    "password": "abc"
+}
